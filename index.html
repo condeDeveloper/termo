@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Termo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <button id="stats-btn" class="icon" title="Estatísticas">📊</button>
+      <h1>TERMO</h1>
+      <button id="help-btn" class="icon" title="Como jogar">?</button>
+    </header>
+
+    <nav class="modes" id="modes">
+      <button data-mode="daily" class="active">Palavra do dia</button>
+      <button data-mode="random">Aleatória</button>
+    </nav>
+
+    <section class="grid" id="grid"></section>
+
+    <p class="message" id="message"></p>
+
+    <section class="keyboard" id="keyboard"></section>
+
+    <div class="modal hidden" id="modal">
+      <div class="dialog">
+        <button class="close" id="close">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/words.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
